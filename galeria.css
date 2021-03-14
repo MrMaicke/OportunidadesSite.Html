@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(187, 103, 103);
+}
+
+.card {
+    float: left;
+    width: 290px;
+    height: 290px;
+    border: solid lightgrey 4px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: gray 2px 2px;
+    border-radius: 10px;
+    background-size: 290px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card a {
+    display: block;
+    text-align: right;
+    width: 250px;
+    height: 250px;
+}
+
+h2 {
+    float: right;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif
+}

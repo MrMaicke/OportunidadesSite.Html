@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verte Belem Oportunidades</title>
     <style>
-               body {
+        body {
             background-color: rgb(187, 103, 103);
         }
 
@@ -46,70 +46,40 @@
 <body>
 
     <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 5px;">
-        <h3 style="float: right"> <br>☎️ </h3>
         <br><a href="../index.html"><img src="verte.png" style="float: left; width: 80px; margin: 5px"></a>
+        <h3 style="float: right"> <br>☎️ </h3>
 
     </div>
 
-    <div class="card" style="background-image: url(fabiana.jpg)">
+    <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 10px;">
 
-        <a href="fabiana.jpg" target="_blanck" right; line:;>🔎</a>
+        <div id= galeria></div>
+        <script>
 
+
+            var g = document.getElementById("galeria")
+
+            for (i = 1; i <= 9; i++) {
+                g.innerHTML += `
+            <div class="galeria">
+                <a target="_blanck" href="fabiana${i}.jpg">
+                <img class="card" src="fabiana${i}.jpg">
+                </a>
+            </div>
+                `
+            }
+        </script>
     </div>
 
-    <div class="card" style="background-image: url(fabiana1.jpg)">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N7B65VF5N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <a href="fabiana1.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-    
-    <div class="card" style="background-image: url(fabiana2.jpg)">
-
-        <a href="fabiana2.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-
-    <div class="card" style="background-image: url(fabiana3.jpg)">
-
-        <a href="fabiana3.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-
-    <div class="card" style="background-image: url(fabiana4.jpg)">
-
-        <a href="fabiana4.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-
-    <div class="card" style="background-image: url(fabiana5.jpg)">
-
-        <a href="fabiana5.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-    
-    <div class="card" style="background-image: url(fabiana6.jpg)">
-
-        <a href="fabiana6.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-
-    <div class="card" style="background-image: url(fabiana7.jpg)">
-
-        <a href="fabiana7.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-
-    <div class="card" style="background-image: url(fabiana8.jpg)">
-
-        <a href="fabiana8.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
-
-    <div class="card" style="background-image: url(fabiana9.jpg)">
-
-        <a href="fabiana9.jpg" target="_blanck" right; line:;>🔎</a>
-
-    </div>
+        gtag('config', 'G-8N7B65VF5N');
+    </script>
 
 </body>
 
