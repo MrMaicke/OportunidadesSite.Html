@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canais</title>
+    <style>
+        body {
+            background-color: rgb(187, 103, 103);
+        }
+
+        .ytube {
+            float: left;
+            width: 150px;
+            height: 160px;
+            border: solid lightgrey 3px;
+            border-radius: 40px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .ytube:hover {
+            border: 3px solid #777;
+        }
+
+        .ytube img {
+            width: 100%;
+            height: 80%;
+        }
+        div {
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 5px;">
+        <br><a href="../index.html"><img src="verte.png" style="float: left; width: 80px; margin: 5px"></a>
+        <h2 style="float:left">Canais<br></h2>
+    </div>
+
+    <div id="tube"></div>
+
+    <script>
+
+        var canal1 = {
+            url: "https://www.youtube.com/c/F%C3%A1bioFerreiradeSouza-impactro",
+            texto: "fabio",
+            image: "fabio.jpg",
+        }
+        var canal2 = {
+            url: "https://youtube.com/channel/UCPZcivK5E2oUnkCB3tJ_pBg",
+            texto: "Casa da Rebeca Gabrielly",
+            image: "rebeca.jpg",
+        }
+        var canais = [canal1,canal2,]
+
+        var c = document.getElementById("tube")
+        for (i = 0; i < canais.length; i++) {
+            c.innerHTML += `
+        <div class="ytube">
+            <a target="_blank" href="${canais[i].url}">
+            <img src="${canais[i].image}"></a>
+            <span class = display: block; style=text-align: center; >${canais[i].texto}</span>
+        </div>`
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N7B65VF5N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8N7B65VF5N');
+    </script>
+
+</body>
+
+</html>
