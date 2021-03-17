@@ -23,7 +23,8 @@
         }
 
         .card img {
-            width: 53%;
+            width: 50%;
+            height: 100%;
             float: left;
             margin: 0px 5px 0px 0px;
         }
@@ -108,7 +109,7 @@
         <img src="verteimg/verte.png" style="float: right; width: 90px; margin: 10px" />
         <div style="float: left; text-align: center; min-width: 240px; width: 30%;">
             <h1>Oportunidades</h1>
-            <p>Rua Cajuru 74 - Belenzinho<br>Catálogo de logistas e prestadores de serviços do Verte Belem</p>
+            <p>Rua Cajuru 74 - Belenzinho<br>Catálogo de lojistas e prestadores de serviços do Verte Belem</p>
         </div>
     </div>
 
@@ -123,7 +124,7 @@
             }
             var dados2 = {
                 link: "https://www.google.com/maps/d/u/1/edit?mid=1ebifjhH0U4n2DW-9we1i5CjuJidAUYCk&ll=-23.54693809884933%2C-46.600369050000005&z=15",
-                texto: "Rua Cajuru 74 - Belenzinho Catálogo de logistas do Verte Belem",
+                texto: "Rua Cajuru 74 - Belenzinho Catálogo de lojistas do Verte Belem",
                 image: "verteimg/vertebelem.jpg",
             }
             var dados3 = {
@@ -207,26 +208,42 @@
                 desc: "Transforme energias em leveza!",
                 texto: "Terapia Integrativa e Cursos para Desenvolvimento Humano",
             }
-            var dados8 ={
-                nome: "Gabrielle Sayuri Amirati",
-                image: "gabrielle/gabrielle.jpeg",
-                texto: "Conteúdo familiar para o YouTube ",
-            }
-            var dados9 = {
+            var dados8 = {
                 perfil: "Ariana/index.html",
                 nome: "Ariana Vieira",
                 image: "Ariana/Ariana.jpeg",
                 desc: "Ariana",
                 texto: "Vestuário feminino e bolsas.",
             }
-            var dados10 ={
+            var dados9 ={
                 perfil: "misael/index.html",
                 nome: "Misael Coelho Santos Cardoso",
                 image: "misael/misael.jpeg",
                 desc: "MC Marido de Aluguel",
                 texto: "Serviços de reparos e instalações residenciais, Serviços de Informática.",
             }
-            var todos = [dados1,dados2,dados3,dados4,dados5,dados6,dados7,dados8,dados9,dados10]
+            var dados10 = {
+                perfil: "lais/index.html",
+                nome: "Laís de souza",
+                image: "lais/lais.jpeg",
+                desc: "Wine House!",
+                texto: "Vinho 🍷 ",
+            }
+            var dados11 = {
+                perfil: "leandro/index.html",
+                nome: "Leandro Martins",
+                image: "leandro/leandro.jpg",
+                desc: "NewsInside",
+                texto: "Manutenção de Computadores.",
+            }
+            var dados12 ={
+                perfil: "qg/index.html",
+                nome: "Evelyn Rodrigues",
+                image: "qg/qg.jpg",
+                desc: "QG do Queijo",
+                texto: "Queijo e derivados.",
+            }
+            var todos = [dados1,dados2,dados3,dados4,dados5,dados6,dados7,dados8,dados9,dados10,dados11,dados12,]
 
             var g2 = document.getElementById("galeria2")
             for (i = 0; i < todos.length; i++) {
@@ -234,9 +251,9 @@
             <div class="card" style="background-color: white;">
                 <a href=${todos[i].perfil}>
                 <img src="${todos[i].image}">
-                <h2> ${todos[i].desc}</h2></a>
+                <h2> ${todos[i].desc}</h2>
                 <h3> ${todos[i].nome}</h3>
-                <p>${todos[i].texto}</p>
+                <p>${todos[i].texto}</p></a>
             </div >`
         }
 
