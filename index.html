@@ -131,8 +131,12 @@
                 texto: "clique aqui para ver todas as plantas oficiais entregues pela Even",
                 image: "verteimg/plantaverte.jpg",
             }
-
-            var todos = [dados1,dados2,dados3]
+            var dados4 = {
+                link: "canais/index.html",
+                texto: "Clique aqui para ver os canais do YouTube da comunidade verte.",
+                image: "verteimg/youtube.jpg",
+            }
+            var todos = [dados1,dados2,dados3,dados4]
 
             var g1 = document.getElementById("galeria1")
             for (i = 0; i < todos.length; i++) {
@@ -200,14 +204,12 @@
                 perfil: "andreia/index.html",
                 nome: "Andreia Fonseca",
                 image: "andreia/andreia.png",
-                desc: "Transforme as energias em leveza!",
+                desc: "Transforme energias em leveza!",
                 texto: "Terapia Integrativa e Cursos para Desenvolvimento Humano",
             }
             var dados8 ={
-                perfil: "sabrina/psiu1.jpg",
-                nome: "Gabrielle Sayuri",
+                nome: "Gabrielle Sayuri Amirati",
                 image: "gabrielle/gabrielle.jpeg",
-                desc: "Gabrielle Sayuri Amirati",
                 texto: "Conteúdo familiar para o YouTube ",
             }
             var dados9 = {
@@ -230,13 +232,12 @@
             for (i = 0; i < todos.length; i++) {
                 g2.innerHTML += `
             <div class="card" style="background-color: white;">
-            <div>
+                <a href=${todos[i].perfil}>
                 <img src="${todos[i].image}">
-                <h2> ${todos[i].desc}</h2>
-                <h3> <a href=${todos[i].perfil}>${todos[i].nome}</a></h3>
+                <h2> ${todos[i].desc}</h2></a>
+                <h3> ${todos[i].nome}</h3>
                 <p>${todos[i].texto}</p>
-                </div >
-                </div >`
+            </div >`
         }
 
         </script>

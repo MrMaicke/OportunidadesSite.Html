@@ -13,10 +13,10 @@
 
         .ytube {
             float: left;
-            width: 150px;
-            height: 160px;
+            width: 250px;
+            height: 290px;
             border: solid lightgrey 3px;
-            border-radius: 40px;
+            border-radius: 30px;
             overflow: hidden;
             margin: 10px;
         }
@@ -27,8 +27,9 @@
 
         .ytube img {
             width: 100%;
-            height: 80%;
+            height: 70%;
         }
+
         div {
             font-family: Arial, Helvetica, sans-serif
         }
@@ -38,8 +39,8 @@
 <body>
 
     <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 5px;">
-        <br><a href="../index.html"><img src="verte.png" style="float: left; width: 80px; margin: 5px"></a>
-        <h2 style="float:left">Canais<br></h2>
+        <br><a href="../index.html"><img src="verte.png" style="float: right; width: 80px; margin: 5px"></a>
+        <h2 style="float:left">Canais do YouTube<br></h2>
     </div>
 
     <div id="tube"></div>
@@ -48,26 +49,42 @@
 
         var canal1 = {
             url: "https://www.youtube.com/c/F%C3%A1bioFerreiradeSouza-impactro",
-            texto: "fabio",
+            nome: "Fábio Ferreira de Souza",
             image: "fabio.jpg",
         }
         var canal2 = {
             url: "https://youtube.com/channel/UCPZcivK5E2oUnkCB3tJ_pBg",
-            texto: "Casa da Rebeca Gabrielly",
+            nome: "Casa da Rebeca Gabrielly",
             image: "rebeca.jpg",
         }
-        var canais = [canal1,canal2,]
+        var canal3 = {
+            url: "https://www.youtube.com/channel/UCKvLzZd-4PngqJ8CyrHsHuw",
+            nome: "Gabrielle Sayuri Amirati",
+            image: "gabrielle.jpeg",
+        }
+        var canais = [canal1, canal2, canal3,]
 
         var c = document.getElementById("tube")
         for (i = 0; i < canais.length; i++) {
             c.innerHTML += `
         <div class="ytube">
             <a target="_blank" href="${canais[i].url}">
-            <img src="${canais[i].image}"></a>
-            <span class = display: block; style=text-align: center; >${canais[i].texto}</span>
+            <img src="${canais[i].image}">
+            <h2>${canais[i].nome}</h2>
         </div>`
         }
     </script>
+
+    <div style="clear: both;"></div>
+
+    <div style="width: 100%; float: left; border-top: solid #aa1238 3px; margin-bottom: 5px;">
+        <a href="../index.html"></a><img src="verte.png" style="float: right; width: 90px; margin: 5px" />
+        <div style="float: left; text-align: center; min-width: 240px; width: 30%;">
+            <h1>Oportunidades</h1>
+            <p><a href="https://chat.whatsapp.com/J6N0VZv4lsS98vVjpZ8HmN" style="color: white;" target="_blanck">clique
+                    aqui para fazer parte do grupo do WhatssApp</p>
+        </div>
+    </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N7B65VF5N"></script>
