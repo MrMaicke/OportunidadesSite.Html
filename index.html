@@ -95,6 +95,12 @@
             padding: 15px;
             text-align: center;
         }
+
+        @media screen and (max-width: 500px) {
+            .qrcode {
+                visibility: hidden;
+            }
+        }
     </style>
 </head>
 
@@ -107,6 +113,7 @@
 
     <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 5px;">
         <img src="verteimg/verte.png" style="float: right; width: 90px; margin: 10px" />
+        <img src="verteimg/qrcodeverte.png" style="float: right; width: 90px; margin: 10px" class="qrcode" />
         <div style="float: left; text-align: center; min-width: 240px; width: 30%;">
             <h1>Oportunidades</h1>
             <p>Rua Cajuru 74 - Belenzinho<br>Catálogo de lojistas e prestadores de serviços do Verte Belem</p>
@@ -115,41 +122,41 @@
 
     <div id="galeria1"></div>
 
-        <Script>
+    <Script>
 
-            var dados1 = {
-                link: "https://chat.whatsapp.com/J6N0VZv4lsS98vVjpZ8HmN",
-                texto: "clique aqui para fazer parte do grupo do WhatssApp",
-                image: "verteimg/grupowhatsap.jpg",
-            }
-            var dados2 = {
-                link: "https://www.google.com/maps/d/u/1/edit?mid=1ebifjhH0U4n2DW-9we1i5CjuJidAUYCk&ll=-23.54693809884933%2C-46.600369050000005&z=15",
-                texto: "Rua Cajuru 74 - Belenzinho Catálogo de lojistas do Verte Belem",
-                image: "verteimg/vertebelem.jpg",
-            }
-            var dados3 = {
-                link: "https://drive.google.com/folderview?id=0BwxKU5Wt0_WQdjRjX0hNRGNvY3c",
-                texto: "clique aqui para ver todas as plantas oficiais entregues pela Even",
-                image: "verteimg/plantaverte.jpg",
-            }
-            var dados4 = {
-                link: "canais/index.html",
-                texto: "Clique aqui para ver os canais do YouTube da comunidade verte.",
-                image: "verteimg/youtube.jpg",
-            }
-            var todos = [dados1,dados2,dados3,dados4]
+        var dados1 = {
+            link: "https://chat.whatsapp.com/J6N0VZv4lsS98vVjpZ8HmN",
+            texto: "clique aqui para fazer parte do grupo do WhatssApp",
+            image: "verteimg/grupowhatsap.jpg",
+        }
+        var dados2 = {
+            link: "https://www.google.com/maps/d/u/1/edit?mid=1ebifjhH0U4n2DW-9we1i5CjuJidAUYCk&ll=-23.54693809884933%2C-46.600369050000005&z=15",
+            texto: "Rua Cajuru 74 - Belenzinho Catálogo de lojistas do Verte Belem",
+            image: "verteimg/vertebelem.jpg",
+        }
+        var dados3 = {
+            link: "https://drive.google.com/folderview?id=0BwxKU5Wt0_WQdjRjX0hNRGNvY3c",
+            texto: "clique aqui para ver todas as plantas oficiais entregues pela Even",
+            image: "verteimg/plantaverte.jpg",
+        }
+        var dados4 = {
+            link: "canais/index.html",
+            texto: "Clique aqui para ver os canais do YouTube da comunidade verte.",
+            image: "verteimg/youtube.jpg",
+        }
+        var todos = [dados1, dados2, dados3, dados4]
 
-            var g1 = document.getElementById("galeria1")
-            for (i = 0; i < todos.length; i++) {
-                g1.innerHTML += `
+        var g1 = document.getElementById("galeria1")
+        for (i = 0; i < todos.length; i++) {
+            g1.innerHTML += `
             <div class="galeria"> 
                 <a target="_blank" href="${todos[i].link}">
                 <img src="${todos[i].image}"></a>
                 <div class="texto">${todos[i].texto}</div>
                 </a>
             </div>`
-            }
-        </Script>
+        }
+    </Script>
 
 
     <div style="clear: both;"></div>
@@ -179,7 +186,7 @@
                 desc: "Don Pesto",
                 texto: "Molhos Pestos • Combinam com massas, pães (da Bela rs), torradas, saladas...",
             }
-            var dados4 ={
+            var dados4 = {
                 perfil: "fabiana/index.html",
                 nome: "Fabiana Giglio",
                 image: "fabiana/fabiana.jpg",
@@ -215,7 +222,7 @@
                 desc: "Ariana",
                 texto: "Vestuário feminino e bolsas.",
             }
-            var dados9 ={
+            var dados9 = {
                 perfil: "misael/index.html",
                 nome: "Misael Coelho Santos Cardoso",
                 image: "misael/misael.jpeg",
@@ -236,14 +243,14 @@
                 desc: "NewsInside",
                 texto: "Manutenção de Computadores.",
             }
-            var dados12 ={
+            var dados12 = {
                 perfil: "qg/index.html",
                 nome: "Evelyn Rodrigues",
                 image: "qg/qg.jpg",
                 desc: "QG do Queijo",
                 texto: "Queijo e derivados.",
             }
-            var todos = [dados1,dados2,dados3,dados4,dados5,dados6,dados7,dados8,dados9,dados10,dados11,dados12,]
+            var todos = [dados1, dados2, dados3, dados4, dados5, dados6, dados7, dados8, dados9, dados10, dados11, dados12,]
 
             var g2 = document.getElementById("galeria2")
             for (i = 0; i < todos.length; i++) {
@@ -255,7 +262,7 @@
                 <h3> ${todos[i].nome}</h3>
                 <p>${todos[i].texto}</p></a>
             </div >`
-        }
+            }
 
         </script>
     </div>
@@ -266,8 +273,9 @@
         <a href="../index.html"></a><img src="verteimg/verte.png" style="float: right; width: 90px; margin: 5px" />
         <div style="float: left; text-align: center; min-width: 240px; width: 30%;">
             <h1>Oportunidades</h1>
-            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2CJs9P7jlfyKrZDnyFdOrgBD5HUQ9OA5YXSmHKHIOjv3e4w/viewform?usp=sf_link" style="color: white;" target="_blanck">
-            clique aqui, preencha o formulario e faça parte do nosso site.
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2CJs9P7jlfyKrZDnyFdOrgBD5HUQ9OA5YXSmHKHIOjv3e4w/viewform?usp=sf_link"
+                    style="color: white;" target="_blanck">
+                    clique aqui, preencha o formulario e faça parte do nosso site.
             </p>
         </div>
     </div>
