@@ -50,7 +50,6 @@
             margin-left: 5px
         }
 
-
         .card div {
             float: left;
             width: 100%;
@@ -96,6 +95,30 @@
             text-align: center;
         }
 
+        .ytube {
+            float: left;
+            width: 250px;
+            height: 290px;
+            border: solid lightgrey 3px;
+            border-radius: 30px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .ytube:hover {
+            border: 3px solid #777;
+        }
+
+        .ytube {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .ytube img {
+            width: 100%;
+            height: 70%;
+        }
+
         @media screen and (max-width: 500px) {
             .qrcode {
                 visibility: hidden;
@@ -105,11 +128,6 @@
 </head>
 
 <body>
-
-    <!--<form>
-        <button type="submit" style="float: right"> pesquisar</button>
-        <input type="text" style="float:right">
-    </form>-->
 
     <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 5px;">
         <img src="verteimg/verte.png" style="float: right; width: 90px; margin: 10px" />
@@ -264,6 +282,38 @@
             </div >`
             }
 
+        </script>
+
+        <div id="tube"></div>
+
+        <script>
+
+            var canal1 = {
+                url: "https://www.youtube.com/c/F%C3%A1bioFerreiradeSouza-impactro",
+                nome: "Fábio Ferreira de Souza",
+                image: "verteimg/fabio.jpg",
+            }
+            var canal2 = {
+                url: "https://youtube.com/channel/UCPZcivK5E2oUnkCB3tJ_pBg",
+                nome: "Casa da Rebeca Gabrielly",
+                image: "verteimg/rebeca.jpg",
+            }
+            var canal3 = {
+                url: "https://www.youtube.com/channel/UCKvLzZd-4PngqJ8CyrHsHuw",
+                nome: "Gabrielle Sayuri Amirati",
+                image: "verteimg/gabrielle.jpeg",
+            }
+            var canais = [canal1, canal2, canal3,]
+
+            var c = document.getElementById("tube")
+            for (i = 0; i < canais.length; i++) {
+                c.innerHTML += `
+        <div class="ytube">
+            <a target="_blank" href="${canais[i].url}">
+            <img src="${canais[i].image}">
+            <h2>${canais[i].nome}</h2>
+        </div>`
+            }
         </script>
     </div>
 

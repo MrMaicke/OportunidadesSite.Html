@@ -1,7 +1,6 @@
 body {
     background-color: rgb(187, 103, 103);
 }
-
 .card {
     float: left;
     width: 290px;
@@ -15,18 +14,15 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
 .card a {
     display: block;
     text-align: right;
     width: 250px;
     height: 250px;
 }
-
 h2 {
     float: right;
 }
-
 div {
     font-family: Arial, Helvetica, sans-serif
 }
