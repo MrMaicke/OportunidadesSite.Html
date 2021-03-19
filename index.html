@@ -170,7 +170,7 @@
             g1.innerHTML += `
             <div class="galeria"> 
                 <a target="_blank" href="${todos[i].link}">
-                <img src="${todos[i].image}"></a>
+                <img src="${todos[i].image}" title="${todos[i].texto}"></a>
                 <div class="texto">${todos[i].texto}</div>
                 </a>
             </div>`
@@ -275,8 +275,8 @@
             for (i = 0; i < todos.length; i++) {
                 g2.innerHTML += `
             <div class="card" style="background-color: white;">
-                <a href=${todos[i].perfil}>
-                <img src="${todos[i].image}">
+                <a  target="_blank" href=${todos[i].perfil}>
+                <img src="${todos[i].image}" title="${todos[i].nome}">
                 <h2> ${todos[i].desc}</h2>
                 <h3> ${todos[i].nome}</h3>
                 <p>${todos[i].texto}</p></a>
