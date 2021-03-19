@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,10 @@
 
         .card {
             float: left;
-            width: 350px;
-            height: 199px;
+            width: 300px;
+            height: 300px;
             border: solid lightgrey 4px;
-            margin: 20px;
+            margin: 5px;
             overflow: hidden;
             box-shadow: gray 2px 2px;
             border-radius: 10px;
@@ -42,6 +41,7 @@
 
 </head>
 
+
 <body>
     <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 5px;">
         <br><a href="../index.html"><img src="verte.png" style="float: left; width: 80px; margin: 5px"></a>
@@ -49,33 +49,26 @@
             <span><a href="tel:11994039296">☎️ (11) 99403-9296.</a></span><br>
             <span><a href="https://www.instagram.com/qgdoqueijo/" target="_blank">@QG do Queijo.</a></span><br>
             <Span><a href="mailto:contato@qgdoqueijo.com">contato@qgdoqueijo.com</a></span>
-    </h3>
+        </h3>
     </div>
+
     <div style="width: 100%; float: left; border-bottom: solid #aa1238 3px; margin-bottom: 10px;">
 
-        <div class="card" style="background-image: url(misael25.jpeg)">
+        <div id= galeria></div>
+        <script>
 
-            <a href="misael25.jpeg" target="_blanck" right; line:;>🔎</a>
+            var g = document.getElementById("galeria")
 
-        </div>
-
-        <div class="card" style="background-image: url(misael27.jpeg)">
-
-            <a href="misael27.jpeg" target="_blanck" right; line:;>🔎</a>
-
-        </div>
-
-        <div class="card" style="background-image: url(misael1.jpeg)">
-
-            <a href="misael1.jpeg" target="_blanck" right; line:;>🔎</a>
-
-        </div>
-
-        <div class="card" style="background-image: url(misael28.jpeg)">
-
-            <a href="misael0.jpeg" target="_blanck" right; line:;>🔎</a>
-
-        </div>
+            for (i = 1; i <= 12; i++) {
+                g.innerHTML += `
+            <div class="galeria">
+                <a target="_blanck" href="qg${i}.jpg">
+                <img class="card" src="qg${i}.jpg">
+                </a>
+            </div>
+                `
+            }
+        </script>
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -89,5 +82,4 @@
     </script>
 
 </body>
-
 </html>
