@@ -10,6 +10,10 @@
             background-color: rgb(204, 124, 124);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        h1 {
+            font-size: x-large;
+            color: #aa1238;
+        }
         .card {
             width: 300px;
             height: 160px;
@@ -25,10 +29,6 @@
             height: 100%;
             float: left;
             margin: 0px 5px 0px 0px;
-        }
-        h1 {
-            font-size: x-large;
-            color: #aa1238;
         }
         .card h2 {
             font-size: large;
@@ -83,12 +83,12 @@
         }
         .ytube {
             float: left;
-            width: 250px;
-            height: 290px;
+            width: 140px;
+            height: 160px;
             border: solid lightgrey 2px;
             border-radius: 30px;
             overflow: hidden;
-            margin: 2px;
+            margin: 5px;
             text-align: center;
         }
         .ytube:hover {
@@ -96,7 +96,11 @@
         }
         .ytube img {
             width: 100%;
-            height: 70%;
+            height: 100%;
+        }
+        .ytube h3 {
+            color: black;
+            text-align: center;
         }
         @media screen and (max-width: 500px) {
             .qrcode {
@@ -264,7 +268,7 @@
         </script>
 
         <div style="clear: both;"></div>
-
+        <h3 style="text-align: center">Canais do YouTube</h3>
         <div id="tube"></div>
 
         <script>
@@ -284,6 +288,11 @@
                 nome: "Gabrielle Sayuri Amirati",
                 image: "verteimg/gabrielle.jpeg",
             }
+            var canal4 = {
+                url: "https://www.youtube.com/channel/UCKvLzZd-4PngqJ8CyrHsHuw",
+                nome: "Gabrielle Sayuri Amirati",
+                image: "verteimg/gabrielle.jpeg",
+            }
             var canais = [canal1, canal2, canal3,]
 
             var c = document.getElementById("tube")
@@ -291,8 +300,7 @@
                 c.innerHTML += `
         <div class="ytube">
             <a target="_blank" href="${canais[i].url}">
-            <img src="${canais[i].image}">
-            <h2>${canais[i].nome}</h2>
+            <img src="${canais[i].image}" ${canais[i].nome}">
         </div>`
             }
         </script>
