@@ -1,1 +1,1 @@
-Opa!! Esse site foi criado com o intuito de ajudar, divugar e dar oportunidasde a todos os negocios, e desenvolver meu conhecimento!!
+Opa!! Esse site foi criado com o intuito de ajudar, divulgar e dar oportunidades a todos os negócios, e desenvolver meu conhecimento!!
